@@ -1,3 +1,9 @@
+$h1color: black;
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
 .wrapper{
     max-width: 1920-40px;
     margin: 0 auto;
@@ -5,7 +11,6 @@
 header{
     display: flex;
     height: 131px;
-    background-color: black;
     align-items: center;
     justify-content: space-between;
     nav{
@@ -14,13 +19,17 @@ header{
             display: flex;
             flex-wrap: wrap;
             list-style-type: none;
-            background-color: aqua;
             width: 704px;
             height: 63px;
             gap: 83px;
             align-items: center;
-            li:hover{
-                font-size: larger;
+            
+            li{
+                transition: 0.2s;  
+                &:hover{
+                    transform: scale(1.3);
+                    transition: 0.2s;   
+            }
             }
         }
     }
@@ -36,5 +45,20 @@ header{
             transform: scale(1.3);
             transition: 0.2s;
         }
+    }
+}
+h1{
+    width: 880px;
+    height: 500px;
+    background: url(/main/img/jpg/h1back.jpg);
+    font-family: 'Bellefair', serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    //-webkit-text-stroke: 0.25px ;
+    font-size: 200.63px;
+    text-align: center;
+    margin: 10px 0 0 905px;
+    a{
+        font-family: 'Dancing Script';
     }
 }
