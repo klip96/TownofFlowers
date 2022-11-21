@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Bikham Cyr Script;
+  src: url(/main/fonts/bikhamcyrscript.ttf);
+}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -65,8 +69,13 @@ header button:hover {
   transition: 0.2s;
 }
 
-h1 {
-  width: 880px;
+.main-title {
+  display: -ms-grid;
+  display: grid;
+}
+.main-title h1 {
+  position: relative;
+  max-width: 880px;
   height: 500px;
   background: url(/main/img/jpg/h1back.jpg);
   font-family: "Bellefair", serif;
@@ -75,7 +84,48 @@ h1 {
   font-size: 200.63px;
   text-align: center;
   margin: 10px 0 0 905px;
+  z-index: 1;
 }
-h1 a {
-  font-family: "Dancing Script";
+.main-title h1 a {
+  font-family: Bikham Cyr Script;
+  position: absolute;
+  font-size: 285.47px;
+  -webkit-text-fill-color: black;
+  font-weight: 400;
+  left: 27%;
+  top: -30%;
+  z-index: 2;
+}
+.main-title p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 286px;
+  max-height: 112px;
+  margin-top: 37px;
+  margin-left: 1474px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-title button {
+  width: 180px;
+  height: 61px;
+  margin-top: 37px;
+  margin-left: 1474px;
+  background-color: #C5010E;
+  border-radius: 98px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-title button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
