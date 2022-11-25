@@ -100,7 +100,7 @@ header button:hover {
   top: -30%;
   z-index: 2;
 }
-.main-title p {
+.main-title .text_h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -147,9 +147,15 @@ header button:hover {
   -o-object-position: 350px;
      object-position: 350px;
 }
+.main-title .about_us {
+  width: auto;
+  height: 450px;
+  padding: 200px 0 0 300px;
+}
 .main-title .about_us h2 {
   width: 423px;
-  height: 238px;
+  height: 260px;
+  margin: 0 0 45px 0;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -160,5 +166,67 @@ header button:hover {
 .main-title .about_us p {
   width: 329px;
   height: 140px;
+  margin: 0 0 0 270px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.flowers-gallery div {
+  display: -ms-grid;
+  display: grid;
+  width: 1436px;
+  height: 1548px;
+  background-color: #C5010E;
+}
+.flowers-gallery div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  height: 560px;
+  background-color: #350463;
+}
+.flowers-gallery div div img {
+  width: 288px;
+  height: 388px;
+  border-radius: 200px 200px 0 0;
+  border: 0px;
+}
+.flowers-gallery div div p {
+  margin: 0;
+  width: 288px;
+  height: 84px;
+  background-color: #3E6304;
+  color: white;
+  z-index: 1;
+}
+.flowers-gallery div div button {
+  position: relative;
+  background-color: #ff0000;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  z-index: 3;
+  bottom: 30px;
+  left: 130px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers-gallery div div button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }

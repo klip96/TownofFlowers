@@ -79,7 +79,7 @@ header{
             z-index: 2;
         }
     }
-    p{
+    .text_h1{
         align-items: center;
         max-width: 286px;
         max-height: 112px;
@@ -122,9 +122,13 @@ header{
          }
     }
     .about_us{
+        width: auto;
+        height: 450px;
+        padding: 200px 0 0 300px;
         h2{
            width: 423px;
-           height: 238px;
+           height: 260px;
+           margin: 0 0 45px 0;
            font-family: 'Bellefair';
            font-style: normal;
            font-weight: 400;
@@ -135,8 +139,59 @@ header{
         p{
             width: 329px;
             height: 140px;
+            margin: 0 0 0 270px;
             color: rgba(0, 0, 0, 0.6);
 
+        }
+    }
+}
+.flowers-gallery{
+    div{
+        display: grid;
+        width: 1436px;
+        height: 1548px;
+        background-color: #C5010E;
+        div{
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+            width: 320px;
+            height: 560px;
+            background-color: #350463;
+            img{
+                width: 288px;
+                height: 388px;
+                border-radius: 200px 200px 0 0 ;
+                border: 0px;
+            }
+            p{
+                margin: 0;
+                width: 288px;
+                height: 84px;
+                background-color: #3E6304;
+                color: white;
+                z-index: 1;
+            }
+            button{
+               position: relative;
+               background-color: #ff0000;
+               color: white;
+               font-size: 26px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 0;
+                z-index: 3;
+                bottom: 30px;
+                left: 130px;
+                transition: 0.2s;
+            &:hover{
+                transform: scale(1.2);
+                transition: 0.2s;
+                   } 
+            }
+                       
         }
     }
 }
