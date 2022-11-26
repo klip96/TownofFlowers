@@ -170,14 +170,26 @@ header button:hover {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.flowers-gallery {
+  margin: 0 auto;
+}
 .flowers-gallery div {
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
+  -ms-grid-columns: (360px)[4];
+  grid-template-columns: repeat(4, 360px);
+  -ms-grid-rows: (140px)[11];
+  grid-template-rows: repeat(11, 140px);
+      grid-template-areas: "a b c d" "e f g h" "i j k l" "m n o p" "q r s t" "u v w x" "a1 b1 c1 d1" "a2 b2 c2 d2" "a3 b3 c3 d3";
+  grid-auto-flow: dense;
   width: 1436px;
   height: 1548px;
-  background-color: #C5010E;
 }
 .flowers-gallery div div {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: u;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,7 +205,6 @@ header button:hover {
           flex-direction: column;
   width: 320px;
   height: 560px;
-  background-color: #350463;
 }
 .flowers-gallery div div img {
   width: 288px;
@@ -217,7 +228,8 @@ header button:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  border: 0;
+  border: solid;
+  border-color: #ffffff;
   z-index: 3;
   bottom: 30px;
   left: 130px;
@@ -229,4 +241,49 @@ header button:hover {
           transform: scale(1.2);
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+.flowers-gallery div .flower_small {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: e;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_big1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: f;
+}
+.flowers-gallery div .flower_small1 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: v;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small2 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: b3;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: o;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_big2 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 3;
+  grid-area: c2;
+}
+.flowers-gallery div .flower_big3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: h;
 }
