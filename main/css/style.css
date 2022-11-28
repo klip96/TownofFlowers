@@ -242,7 +242,7 @@ header button:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.flowers-gallery div .flower_small {
+.flowers-gallery div .flower_small0 {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: e;
