@@ -347,3 +347,16 @@ header button:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+
+.flowers_section div:not(.flowers_more) {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers_section div:not(.flowers_more):hover {
+  -webkit-animation: shake;
+          animation: shake;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}

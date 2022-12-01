@@ -289,4 +289,14 @@ header{
         }
     }
 }
+.flowers_section{
+    div:not(.flowers_more){
+        transition: 0.2s; 
+        &:hover{
+            animation: shake;
+            transform: scale(1.3);
+            transition: 0.3s; 
+        }
+    }
+}
 
