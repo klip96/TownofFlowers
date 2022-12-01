@@ -76,18 +76,28 @@ header button:hover {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-title div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .main-title h1 {
   position: relative;
   max-width: 880px;
   height: 500px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   background: url(/main/img/jpg/h1back.jpg);
   font-family: "Bellefair", serif;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 200.63px;
   text-align: center;
-  margin: 10px 0 0 905px;
+  margin: 10px 0 0 0px;
   z-index: 1;
 }
 .main-title h1 a {
@@ -100,6 +110,9 @@ header button:hover {
   top: -30%;
   z-index: 2;
 }
+.main-title .buy_flowers {
+  margin-right: 30px;
+}
 .main-title .text_h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -107,7 +120,6 @@ header button:hover {
   max-width: 286px;
   max-height: 112px;
   margin-top: 37px;
-  margin-left: 1474px;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -0.025em;
@@ -117,7 +129,6 @@ header button:hover {
   width: 180px;
   height: 61px;
   margin-top: 37px;
-  margin-left: 1474px;
   background-color: #C5010E;
   border-radius: 98px;
   border: 0;
@@ -205,6 +216,7 @@ header button:hover {
           flex-direction: column;
   width: 320px;
   height: 560px;
+  z-index: 1;
 }
 .flowers-gallery div div img {
   width: 288px;
@@ -215,12 +227,13 @@ header button:hover {
 .flowers-gallery div div p {
   margin: 0;
   width: 288px;
-  height: 84px;
+  height: 70px;
   background-color: #3E6304;
   color: white;
-  z-index: 1;
+  text-align: center;
+  padding-top: 15px;
 }
-.flowers-gallery div div button {
+.flowers-gallery div div .but_shop {
   position: relative;
   background-color: #ff0000;
   color: white;
@@ -236,9 +249,9 @@ header button:hover {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-.flowers-gallery div div button:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.flowers-gallery div div .but_shop:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -286,4 +299,51 @@ header button:hover {
   -ms-grid-row: 2;
   -ms-grid-column: 4;
   grid-area: h;
+}
+.flowers-gallery .flowers_more {
+  width: 813px;
+  height: 813px;
+  background-color: #ff0000;
+  border-radius: 406.5px;
+  border: 0;
+  position: relative;
+  left: 1200px;
+}
+.flowers-gallery .flowers_more div {
+  width: 198px;
+  height: 173px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 135px;
+}
+.flowers-gallery .flowers_more div p {
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0);
+  font-weight: 700;
+  font-size: 30px;
+}
+.flowers-gallery .flowers_more div button {
+  width: 180px;
+  height: 61px;
+  background: #C5010E;
+  border: 2px solid #FFFFFF;
+  border-radius: 98px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers-gallery .flowers_more div button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }

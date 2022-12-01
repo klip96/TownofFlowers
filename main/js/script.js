@@ -13,12 +13,12 @@ async function getResponse() {
             <div class="flower_big${key}">
                 <img src="${content[key].url}" alt="">
                 <p>${content[key].title}</p>
-                <button>+</button>
+                <button class="but_shop">+</button>
             </div>
             <div class="flower_small${key}">
                 <img src="${content[key].url}" alt="">
                 <p>${content[key].title}</p>
-                <button>+</button>
+                <button class="but_shop">+</button>
                         
             </div>
            
