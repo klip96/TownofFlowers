@@ -70,6 +70,23 @@ header button:hover {
   transition: 0.2s;
 }
 
+.img_div {
+  width: 1800px;
+  height: 1800px;
+  position: absolute;
+  top: 320px;
+  overflow: hidden;
+}
+.img_div img {
+  position: relative;
+  width: 1800px;
+  height: 1800px;
+  border-radius: 900px;
+  right: 1020px;
+  -o-object-position: 350px;
+     object-position: 350px;
+}
+
 .main-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,20 +160,6 @@ header button:hover {
           transform: scale(1.3);
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-.main-title .img_div {
-  width: 900px;
-  height: 1350px;
-}
-.main-title .img_div img {
-  position: relative;
-  width: 1800px;
-  height: 1800px;
-  border-radius: 900px;
-  right: 1020px;
-  top: -430px;
-  -o-object-position: 350px;
-     object-position: 350px;
 }
 .main-title .about_us {
   width: auto;
