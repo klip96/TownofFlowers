@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Bikham Cyr Script;
+  src: url(/main/fonts/bikhamcyrscript.ttf);
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.wrapper {
+  max-width: 1880px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 131px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header nav {
+  margin-left: 20px;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  width: 704px;
+  height: 63px;
+  gap: 83px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header nav ul li:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header button {
+  background-color: red;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border-style: none;
+  margin-right: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.img_div {
+  width: 800px;
+  height: 1800px;
+  position: absolute;
+  top: 320px;
+  overflow: hidden;
+}
+.img_div img {
+  position: relative;
+  width: 1800px;
+  height: 1800px;
+  border-radius: 900px;
+  right: 1020px;
+  -o-object-position: 350px;
+     object-position: 350px;
+}
+
+.main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-title div {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+.main-title h1 {
+  position: relative;
+  max-width: 880px;
+  height: 500px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: url(/main/img/jpg/h1back.jpg);
+  font-family: "Bellefair", serif;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 200.63px;
+  text-align: center;
+  margin: 10px 0 0 0px;
+  z-index: 1;
+}
+.main-title h1 a {
+  font-family: Bikham Cyr Script;
+  position: absolute;
+  font-size: 285.47px;
+  -webkit-text-fill-color: black;
+  font-weight: 400;
+  left: 27%;
+  top: -30%;
+  z-index: 2;
+}
+.main-title .buy_flowers {
+  margin-right: 30px;
+}
+.main-title .text_h1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 286px;
+  max-height: 112px;
+  margin-top: 37px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.025em;
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-title button {
+  width: 180px;
+  height: 61px;
+  margin-top: 37px;
+  background-color: #C5010E;
+  border-radius: 98px;
+  border: 0;
+  color: white;
+  font-size: 18px;
+  letter-spacing: -0.025em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-title button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.main-title .about_us {
+  width: auto;
+  height: 450px;
+  padding: 200px 0 0 300px;
+}
+.main-title .about_us h2 {
+  width: 423px;
+  height: 260px;
+  margin: 0 0 45px 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 130px;
+  text-align: end;
+  color: #3E6304;
+}
+.main-title .about_us p {
+  width: 329px;
+  height: 140px;
+  margin: 0 0 0 270px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.flowers-gallery {
+  margin: 0 auto;
+}
+.flowers-gallery div {
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (360px)[4];
+  grid-template-columns: repeat(4, 360px);
+  -ms-grid-rows: (140px)[11];
+  grid-template-rows: repeat(11, 140px);
+      grid-template-areas: "a b c d" "e f g h" "i j k l" "m n o p" "q r s t" "u v w x" "a1 b1 c1 d1" "a2 b2 c2 d2" "a3 b3 c3 d3";
+  grid-auto-flow: dense;
+  width: 1436px;
+  height: 1548px;
+}
+.flowers-gallery div div {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: u;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 320px;
+  height: 560px;
+  z-index: 1;
+}
+.flowers-gallery div div img {
+  width: 288px;
+  height: 388px;
+  border-radius: 200px 200px 0 0;
+  border: 0px;
+}
+.flowers-gallery div div p {
+  margin: 0;
+  width: 288px;
+  height: 70px;
+  background-color: #3E6304;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+.flowers-gallery div div .but_shop {
+  position: relative;
+  background-color: #ff0000;
+  color: white;
+  font-size: 26px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: solid;
+  border-color: #ffffff;
+  z-index: 3;
+  bottom: 30px;
+  left: 130px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers-gallery div div .but_shop:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers-gallery div .flower_small0 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: e;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_big1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: f;
+}
+.flowers-gallery div .flower_small1 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: v;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small2 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 2;
+  grid-area: b3;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: c;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_small4 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: o;
+  scale: 0.7;
+}
+.flowers-gallery div .flower_big2 {
+  -ms-grid-row: 8;
+  -ms-grid-column: 3;
+  grid-area: c2;
+}
+.flowers-gallery div .flower_big3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: h;
+}
+.flowers-gallery .flowers_more {
+  width: 813px;
+  height: 813px;
+  background-color: #ff0000;
+  border-radius: 406.5px;
+  border: 0;
+  position: relative;
+  left: 1200px;
+}
+.flowers-gallery .flowers_more div {
+  width: 198px;
+  height: 173px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 135px;
+}
+.flowers-gallery .flowers_more div p {
+  margin: 0;
+  background-color: rgba(255, 0, 0, 0);
+  font-weight: 700;
+  font-size: 30px;
+}
+.flowers-gallery .flowers_more div button {
+  width: 180px;
+  height: 61px;
+  background: #C5010E;
+  border: 2px solid #FFFFFF;
+  border-radius: 98px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers-gallery .flowers_more div button:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.flowers_section div:not(.flowers_more) {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.flowers_section div:not(.flowers_more):hover {
+  -webkit-animation: shake;
+          animation: shake;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
